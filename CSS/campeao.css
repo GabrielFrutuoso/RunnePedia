@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(https://wallpaperaccess.com/full/4884251.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.indCard{
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border: 4px groove #d49708;
+}
+
+.indCard img{
+    width: 99%;
+}
+
+.indTexts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    width: 99%;
+    height: 400px;
+    color: #ffffff;
+}
+
+.indTexts #indName{
+    color: #d49708;
+    text-align: left;
+    border-bottom: 2px solid #d49708;
+    width: 90%;
+    margin: 15px;
+    padding: 3px;
+    font-size: 2em;
+}
+
+.indTexts .indTitle{
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.infos{
+    color: #9d9d9d;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#indDesc, .skills p{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-indent: 35px;
+    width: 92%;
+    color: #9d9d9d;
+}
+
+.skills{
+    width: 90%;
+}
+
+.skills h1{
+    margin: 30px 5px 15px 0px;
+    font-size: 1.6em;
+    border-bottom: 2px solid #d49708;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #d49708;
+}
+
+@media only screen and (max-width: 600px){
+    .indCard{
+        width: 310px;
+    }
+
+    .infos{
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .skills h1{
+        font-size: 1.2em;
+    }
+
+    #indDesc, .skills p{
+        font-size: 1em;
+        text-indent: 20px;
+    }
+}
